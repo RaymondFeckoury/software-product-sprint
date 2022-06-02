@@ -1,9 +1,82 @@
 #content {
-  margin-left: auto;
-  margin-right: auto;
-  width: 650px;
-}
-
-#greeting-container {
-  margin-top: 20px;
-}
+    margin-left: auto;
+    margin-right: auto;
+    width: 650px;
+    /* background-color: rgb(245, 20, 20); */
+    background-color: rgb(62, 241, 241);
+  }
+  
+  #greeting-container {
+    margin-top: 20px;
+  }
+  
+  .top-row {
+    background-color:rgb(22, 20, 20);
+  }
+  
+  .professional-pic {
+    float: left;
+    /* Makes the image responsive */
+    width: 25%;
+    height: auto;
+    /* Centers the image */
+    margin-left: 20px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    /* Rounds the corners */
+    border-radius: 50%;
+  }
+  
+  .top-row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  
+  .top-row .myInfo {
+    padding-top: 50px;
+    margin-left: 200px;
+    color: white;
+  }
+  
+  .top-row .myInfo p a {
+    color: white;
+  }
+  
+  nav {
+    text-align: center;
+    margin-bottom: 15px;
+    margin-top: 15px;
+  }
+  
+  nav a {
+    font-size: 18pt;
+    color: black;
+  }
+  
+  .intro::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  
+  .casual-pic {
+    float: left;
+    /* Makes the image responsive */
+    width: 50%;
+    height: auto;
+    /* Centers the image */
+    margin-left: 5px;
+    margin-right: 5px;
+    /* Rounds the corners */
+    border-radius: 20%;
+  }
+  
+  .intro .intro-paragraphs {
+    padding: 25% 5px;
+    margin-left: 325px;
+  }
+  
+  .intro .intro-paragraphs p {
+    text-indent: 20px;
+  }
