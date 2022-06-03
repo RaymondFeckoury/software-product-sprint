@@ -1,0 +1,60 @@
+#content {
+    margin-left: auto;
+    margin-right: auto;
+    width: 650px;
+    /* background-color: rgb(245, 20, 20); */
+    background-color: rgb(62, 241, 241);
+  }
+
+h1 {
+    padding-top: 15px;
+    text-align: center;
+}
+
+nav {
+    text-align: center;
+}
+
+.hackathon {
+    text-align: center;
+}
+
+p {
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    text-indent: 20px;
+}
+
+.hackathon1 {
+    padding-top: 20px;
+    padding-left: 20px;
+    width: 300px;
+    height: auto;
+}
+
+.hackathon2 {
+    width: 300px;
+    height: auto;
+}
+
+.app-organizer {
+    text-align: center;
+}
+
+.appOrg1 {
+    width: 400px;
+    height: auto;
+    padding-left: 120px;
+    display: block;
+}
+
+.appOrg2 {
+    width: 300px;
+    height: auto;
+}
+
+.appOrg3 {
+    width: 300px;
+    height: auto;
+}
