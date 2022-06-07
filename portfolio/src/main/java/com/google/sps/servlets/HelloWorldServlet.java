@@ -40,19 +40,4 @@ public class HelloWorldServlet extends HttpServlet {
     return json;
   }
 
-  /*@Override
-  public void doGet(HttpServletRequest request, HttpServletResponse response) throws IOException {
-    // Calculate server stats
-    Date currentTime = new Date();
-    long maxMemory = Runtime.getRuntime().maxMemory();
-    long usedMemory = Runtime.getRuntime().totalMemory() - Runtime.getRuntime().freeMemory();
-
-    // Convert the server stats to JSON
-    ServerStats serverStats = new ServerStats(startTime, currentTime, maxMemory, usedMemory);
-    String json = convertToJson(serverStats);
-
-    // Send the JSON as the response
-    response.setContentType("application/json;");
-    response.getWriter().println(json);
-  }*/
 }
