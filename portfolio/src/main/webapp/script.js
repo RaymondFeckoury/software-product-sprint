@@ -15,7 +15,7 @@
 /**
  * Adds a random greeting to the page.
  */
-function addRandomGreeting() {
+/*function addRandomGreeting() {
   const greetings =
   ['My mom is an immigrant from France, and we have spent many summers there visiting friends and family!', 
   'I raced motocross for a few years, and won a championship in a series that travels to almost every race track in Georgia', 
@@ -27,15 +27,44 @@ function addRandomGreeting() {
   // Add it to the page.
   const greetingContainer = document.getElementById('greeting-container');
   greetingContainer.innerText = greeting;
-}
+}*/
 
 /** 
  * Fetches a message from the server and adds it to the page. 
  */
 async function showServerMessage() {
     const responseFromServer = await fetch('/hello');
-    const textFromResponse = await responseFromServer.text();
+    const messages = await responseFromServer.json();
+   
+    const random = messages[Math.floor(Math.random() * messages.length)];
   
-    const dateContainer = document.getElementById('message-container');
-    dateContainer.innerText = textFromResponse;
-  }
+    const messageContainer = document.getElementById('message-container');
+    messageContainer.innerText = random;
+}
+
+/** Fetches stats from the server and adds them to the page. */
+/*async function getServerStats() {
+    const responseFromServer = await fetch('/server-stats');
+    // The json() function returns an object that contains fields that we can
+    // reference to create HTML.
+    const stats = await responseFromServer.json();
+  
+    const statsListElement = document.getElementById('server-stats-container');
+    statsListElement.innerHTML = '';
+  
+    statsListElement.appendChild(
+        createListElement('Start time: ' + stats.startTime));
+    statsListElement.appendChild(
+        createListElement('Current time: ' + stats.currentTime));
+    statsListElement.appendChild(
+        createListElement('Max memory: ' + stats.maxMemory));
+    statsListElement.appendChild(
+        createListElement('Used memory: ' + stats.usedMemory));
+}*/
+  
+/** Creates an <li> element containing text. */
+/*function createListElement(text) {
+    const liElement = document.createElement('li');
+    liElement.innerText = text;
+    return liElement;
+}*/
