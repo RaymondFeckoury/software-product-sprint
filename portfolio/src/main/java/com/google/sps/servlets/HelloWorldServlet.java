@@ -22,7 +22,6 @@ public class HelloWorldServlet extends HttpServlet {
     messages.add("In my free time I enjoy spending time in the outdoors as well as hitting the gym with my friends!");
     
     // Converts the list to json format
-    response.setContentType("text/html;");
     String json = convertToJsonUsingGson(messages);
 
     // Send the JSON as the response
