@@ -2,18 +2,58 @@
 <html>
   <head>
     <meta charset="UTF-8">
-    <title>My Portfolio</title>
+    <title>Raymond's Portfolio</title>
     <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
   </head>
   <body>
     <div id="content">
-      <h1>My Portfolio</h1>
-      <p>This is my portfolio.</p>
-      <p>Click <a href="/hello">here</a> to see content created by server code.</p>
-      <p>Click here to get a random message:</p>
-      <button onclick="addRandomGreeting()">Hello</button>
-      <div id="greeting-container"></div>
+
+      <!-- Name, contact info, "professional image"-->
+      <div class="top-row">
+        <img class="professional-pic" src="./images/profilePic.png" alt="Picture of me" width="20px" height="20px">
+
+        <div class="myInfo">
+          <h1>Raymond Feckoury</h1>
+          <p>
+            <a href="https://www.linkedin.com/in/raymondfeckoury/" target="_blank">LinkedIn |</a>
+            <a href="https://github.com/RaymondFeckoury" target="_blank">GitHub |</a>
+            <a href="mailto:raymondfeckoury@icloud.com">Send Email</a>
+          </p>
+        </div>
+      </div>
+
+        <!-- Navigation links -->
+        <nav>
+          <a href="projects.html">Projects</a> |
+          <a href="interests.html">Hobbies & Interests</a> |
+          <a href="interactive.html">Fun Facts</a>
+        </nav>
+
+        <div class="intro">
+          <!-- More casual picture -->
+          <img class="casual-pic" src="./images/mainPic.png" alt="Picture of me">
+
+          <!-- Explains my background and what makes me me -->
+          <div class="intro-paragraphs">
+            <!-- Paragraph 1 -->
+            <p>
+              Hi there! I am a rising 3rd year undergraduate student studying 
+              Computer Science at The University of Georgia. I aspire to be
+              the most competent full stack engineer that I am capable of becoming,
+              and I hope to leverage these skills to build useful technologies throughout
+              the course of my career. 
+            </p>
+
+            <!-- Paragraph 2 -->
+            <p>
+              During my time at The University of Georgia I have served as an undergraduate
+              teaching assistant, participated and won awards in the university's 
+              annual hackathon, maintained a 4.0 major GPA, and was recently
+              selected to serve on the executive membership board for our chapter of 
+              the Association for Computing Machinery.
+            </p>
+          </div>
+        </div>
     </div>
   </body>
 </html>
