@@ -28,3 +28,14 @@ function addRandomGreeting() {
   const greetingContainer = document.getElementById('greeting-container');
   greetingContainer.innerText = greeting;
 }
+
+/** 
+ * Fetches a message from the server and adds it to the page. 
+ */
+async function showServerMessage() {
+    const responseFromServer = await fetch('/hello');
+    const textFromResponse = await responseFromServer.text();
+  
+    const dateContainer = document.getElementById('message-container');
+    dateContainer.innerText = textFromResponse;
+  }
