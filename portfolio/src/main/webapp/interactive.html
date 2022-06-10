@@ -8,23 +8,31 @@
   </head>
   <body>
     <div id="content">
-        <h1>Raymond Feckoury</h1>
+        <!-- Name, contact info, "professional image"-->
+      <div class="top-row">
+        <img class="professional-pic" src="./images/profilePic.png" alt="Picture of me" width="20px" height="20px">
+
+        <div class="myInfo">
+          <h1>Raymond Feckoury</h1>
+          <p>
+            <a href="https://www.linkedin.com/in/raymondfeckoury/" target="_blank">LinkedIn |</a>
+            <a href="https://github.com/RaymondFeckoury" target="_blank">GitHub |</a>
+            <a href="mailto:raymondfeckoury@icloud.com">Send Email</a>
+          </p>
+        </div>
+      </div>
 
         <!-- Navigation links -->
         <nav>
-            <a href="index.html">Home Page</a> |
-            <a href="projects.html">Projects</a> |
-            <a href="interests.html">Hobbies/Interests</a>
+          <a href="index.html">Home Page</a> |
+          <a href="projects.html">Projects</a> |
+          <a href="interests.html">Hobbies & Interests</a>
         </nav>
-
-        <!-- Picture in suit and tie -->
-        <img class="professional-pic" src="./images/suit.png" alt="Picture of me">
 
         <!-- Random message and server code -->
         <div id="interactive">
           <p>Click <a href="/hello">here</a> to see content created by server code.</p>
-          <p>Click here to get a random message:</p>
-          <button onclick="addRandomGreeting()">Hello</button>
+          <p>Click <button onclick="addRandomGreeting()">here</button> for random facts!</p>
           <div id="greeting-container"></div>
         </div>
     </div>
