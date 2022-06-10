@@ -12,30 +12,15 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-/**
- * Adds a random greeting to the page.
- */
-function addRandomGreeting() {
-  const greetings =
-  ['My mom is an immigrant from France, and we have spent many summers there visiting friends and family!', 
-  'I raced motocross for a few years, and won a championship in a series that travels to almost every race track in Georgia', 
-  'I earned my private pilots license while I was in high school, and I hope to begin flying again once graduate from college.'];
-
-  // Pick a random greeting.
-  const greeting = greetings[Math.floor(Math.random() * greetings.length)];
-
-  // Add it to the page.
-  const greetingContainer = document.getElementById('greeting-container');
-  greetingContainer.innerText = greeting;
-}
-
 /** 
  * Fetches a message from the server and adds it to the page. 
  */
 async function showServerMessage() {
     const responseFromServer = await fetch('/hello');
-    const textFromResponse = await responseFromServer.text();
+    const messages = await responseFromServer.json();
+   
+    const random = messages[Math.floor(Math.random() * messages.length)];
   
-    const dateContainer = document.getElementById('message-container');
-    dateContainer.innerText = textFromResponse;
-  }
+    const messageContainer = document.getElementById('message-container');
+    messageContainer.innerText = random;
+}
