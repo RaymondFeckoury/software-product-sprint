@@ -8,8 +8,6 @@
   </head>
   <body>
     <div id="content">
-
-        <!-- Name, contact info, "professional image"-->
         <div class="top-row">
             <img class="professional-pic" src="./images/profilePic.png" alt="Picture of me" width="20px" height="20px">
 
@@ -22,24 +20,15 @@
             </p>
             </div>
         </div>
-
-        <!-- Navigation links -->
         <nav>
             <a href="#home-anchor">Home</a> |
             <a href="#projects-anchor">Projects</a> |
             <a href="#interests-anchor">Hobbies & Interests</a> |
             <a href="#contact-anchor">Send Me Info!</a>
         </nav>
-
-        <!-- Intro Section -->
-
         <div class="intro">
-            <!-- More casual picture -->
             <img class="casual-pic" src="./images/mainPic.png" alt="Picture of me">
-
-            <!-- Explains my background and what makes me me -->
             <div class="intro-paragraphs">
-                <!-- Paragraph 1 -->
                 <p>
                 Hi there! I am a rising 3rd year undergraduate student studying 
                 Computer Science at The University of Georgia. I aspire to be
@@ -47,8 +36,6 @@
                 and I hope to leverage these skills to build useful technologies throughout
                 the course of my career. 
                 </p>
-
-                <!-- Paragraph 2 -->
                 <p>
                 During my time at The University of Georgia I have served as an undergraduate
                 teaching assistant, participated and won awards in the university's 
@@ -58,26 +45,17 @@
                 </p>
             </div>
         </div>
-
-        <!-- Projects Section -->
-
         <hr>
         <h1 id="projects-anchor">My Projects!</h1>
-
-        <!-- Free Food UGA project -->
         <div class="hackathon">
             <h2>Free Food UGA</h2>
-            <!-- Links -->
             <div class="hackathon-links">
             <a href="https://free-food-uga-97846.firebaseapp.com" target="_blank">Website Link | </a>
             <a href="https://devpost.com/software/free-food-uga" target="_blank">Devpost Link</a>
             </div>
-            
-            <!-- Images of the website -->
             <img class="hackathon1" src="./images/hackathon1.png" alt="Picture of the website">
             <img class="hackathon2" src="./images/hackathon2.png" alt="Picture of the website">
         </div>
-        <!-- Descriptions -->
         <p class="indent">
           I created this website along with my two teammates during a hackathon called UGAHacks 7, and
           we won the Major League Hacking Best use of Google Cloud Award! The website helps students and
@@ -90,19 +68,13 @@
           we were able to implement a sign in page that enables the user to sign in with their google 
           account using the Firebase documentation
         </p>
-
-        <!-- Web programming class project -->
         <div class="app-organizer">
             <h2 style="text-align: center;">Application Organizer</h2>
             <a href="https://github.com/RaymondFeckoury/Group5_FinalProject" target="_blank">GitHub Repo</a>
-
-            <!-- Images of the website -->
             <img class="appOrg1" src="./images/appOrg1.png" alt="Picture of the website"><br>
             <img class="appOrg2" src="./images/appOrg2.png" alt="Picture of the website">
             <img class="appOrg3" src="./images/appOrg3.png" alt="Picture of the website">
         </div>
-
-        <!-- Descriptions -->
         <p class="indent">
             This website helps users organize information about their applications to jobs and/or internships.
             It was a semester long team based project for a web programming course. I used PHP 
@@ -112,57 +84,43 @@
             move applications to any category required a lot of queries. Implementing these queries successfully
             and teaching myself these backend technologies was very rewarding!
         </p>
-
-        <!-- Interests Section -->
-
         <div class="interests">
         <hr>
         <h1 id="interests-anchor">More About Me</h1>
-
         <div class="aboutMeButton">
-            <button onclick="showServerMessage();">
+            <button id="button" onclick="showServerMessage();">
             Click For Fun Facts!
             </button><br>
             <p id="message-container"></p>
         </div>
-
-        <!-- Aviation -->
         <h2>Aviation</h2>
-
         <div class="gallery">
             <a target="_blank" href="./images/first-solo.png">
             <img src="./images/first-solo.png" alt="Picture after my first solo flight" width="1000" height="auto">
             </a>
         </div>
-
         <div class="gallery">
             <a target="_blank" href="./images/first-solo2.png">
             <img src="./images/first-solo2.png" alt="Picture after my first solo flight" width="500" height="auto">
             </a>
         </div>
-
         <div class="gallery">
             <a target="_blank" href="./images/shannon.png">
             <img src="./images/shannon.png" alt="Picture after my first solo flight" width="500" height="auto">
             </a>
         </div>
-
         <p class="indent">
             When I was in high school I was very fortunate to have been given the opportunity to earn my
             private pilots license. I did so successfully, and I have enjoyed taking friends and family flying!
             I have not flown since starting college, but I hope to get back into it when I have time to in the future.
             Above are pictures of me with my flight instructor, Shannon, as well as right after my first solo flight.
         </p>
-
-        <!-- Hackathon -->
         <div class="gallery">
             <a target="_blank" href="./images/pic-from-hackathon.png">
             <img src="./images/pic-from-hackathon.png" alt="Picture with friends at my first hackathon" width="500" height="auto">
             </a>
             <div class="desc">My friends and I at our first hackathon! I am looking forward to doing more.</div>
         </div>
-
-        <!-- France -->
         <div class="gallery" id="france">
             <h2>Traveling</h2>
             <a target="_blank" href="./images/france.png">
@@ -172,15 +130,11 @@
             and family. I love learning about their culture, and I hope to go back soon before my French becomes too rusty!</div>
         </div> 
         </div>
-
-        <!-- Contact Me Section -->
-
         <hr>
         <h1 id="contact-anchor">Send Info</h1>
         <p id="info-paragraph">Please feel free to send me your email or any other information and 
             I will be sure to contact you as soon as possible!
         </p>
-
         <form action="/form-handler" method="POST" class="contact-form">
             <label for="email">Email:</label>
             <input type="email" id="email" name="email-input"><br><br>
@@ -189,7 +143,6 @@
             <br>
             <input type="submit"><br><br>
         </form>
-
     </div>
   </body>
 </html>
