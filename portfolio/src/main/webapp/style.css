@@ -2,18 +2,24 @@
     margin-left: auto;
     margin-right: auto;
     width: 650px;
-    background-color: rgb(62, 241, 241);
-  }
+    border: 3px solid black;
+    background-color: rgb(245, 240, 234);
+}
+
+h1 {
+    padding-top: 15px;
+    text-align: center;
+}
   
-  #greeting-container {
+#greeting-container {
     margin-top: 20px;
-  }
+}
   
-  .top-row {
-    background-color:rgb(22, 20, 20);
-  }
+.top-row {
+    background-color:rgb(44, 42, 42);
+}
   
-  .professional-pic {
+.professional-pic {
     float: left;
     /* Makes the image responsive */
     width: 25%;
@@ -24,42 +30,43 @@
     margin-bottom: 10px;
     /* Rounds the corners */
     border-radius: 50%;
-  }
+}
   
-  .top-row::after {
+.top-row::after {
     content: "";
     clear: both;
     display: table;
-  }
+}
   
-  .top-row .myInfo {
+.top-row .myInfo {
+    text-align: center;
     padding-top: 50px;
     margin-left: 200px;
     color: white;
-  }
+}
   
-  .top-row .myInfo p a {
+.top-row .myInfo p a {
     color: white;
-  }
+}
   
-  nav {
+nav {
     text-align: center;
     margin-bottom: 15px;
     margin-top: 15px;
-  }
+}
   
-  nav a {
+nav a {
     font-size: 18pt;
     color: black;
-  }
+}
   
-  .intro::after {
+.intro::after {
     content: "";
     clear: both;
     display: table;
-  }
+}
   
-  .casual-pic {
+.casual-pic {
     float: left;
     /* Makes the image responsive */
     width: 50%;
@@ -69,13 +76,119 @@
     margin-right: 5px;
     /* Rounds the corners */
     border-radius: 20%;
-  }
+}
   
-  .intro .intro-paragraphs {
+.intro .intro-paragraphs {
     padding: 25% 5px;
     margin-left: 325px;
-  }
+}
   
-  .intro .intro-paragraphs p {
+.intro .intro-paragraphs p {
     text-indent: 20px;
-  }
+}
+
+.indent {
+    text-indent: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+/* Projects Section*/
+
+.hackathon {
+    text-align: center;
+}
+
+.intro-paragraphs p {
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    text-indent: 20px;
+}
+
+.hackathon1 {
+    padding-top: 20px;
+    padding-left: 20px;
+    width: 300px;
+    height: auto;
+}
+
+.hackathon2 {
+    width: 300px;
+    height: auto;
+}
+
+.app-organizer {
+    text-align: center;
+}
+
+.appOrg1 {
+    width: 400px;
+    height: auto;
+    padding-left: 120px;
+    display: block;
+}
+
+.appOrg2 {
+    width: 300px;
+    height: auto;
+}
+
+.appOrg3 {
+    width: 300px;
+    height: auto;
+}
+
+/* Interests Section */
+
+#button {
+    background-color: rgb(233, 227, 227);
+}
+
+#message-container {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.interests {
+    display: inline-block;
+}
+
+div.gallery {
+    margin: 5px;
+    border: 1px solid #ccc;
+    float: left;
+    width: 300px;
+}
+
+div.gallery:hover {
+    border: 1px solid #777;
+}
+
+div.gallery img {
+    width: 100%;
+    height: auto;
+}
+
+div.desc {
+    padding: 15px;
+    text-align: center;
+}
+
+#info-paragraph {
+    margin-left: 175px;
+    margin-right: 175px;
+}
+
+.contact-form {
+    text-align: center;
+}
+
+#comments {
+    width: 300px;
+    height: 75px
+}
+
+h2 {
+    text-align: center;
+}

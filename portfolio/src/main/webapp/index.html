@@ -4,56 +4,145 @@
     <meta charset="UTF-8">
     <title>Raymond's Portfolio</title>
     <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
   </head>
   <body>
     <div id="content">
+        <div class="top-row">
+            <img class="professional-pic" src="./images/profilePic.png" alt="Picture of me" width="20px" height="20px">
 
-      <!-- Name, contact info, "professional image"-->
-      <div class="top-row">
-        <img class="professional-pic" src="./images/profilePic.png" alt="Picture of me" width="20px" height="20px">
-
-        <div class="myInfo">
-          <h1>Raymond Feckoury</h1>
-          <p>
-            <a href="https://www.linkedin.com/in/raymondfeckoury/" target="_blank">LinkedIn |</a>
-            <a href="https://github.com/RaymondFeckoury" target="_blank">GitHub |</a>
-            <a href="mailto:raymondfeckoury@icloud.com">Send Email</a>
-          </p>
+            <div class="myInfo">
+            <h1 href="home-anchor">Raymond Feckoury</h1>
+            <p>
+                <a href="https://www.linkedin.com/in/raymondfeckoury/" target="_blank">LinkedIn |</a>
+                <a href="https://github.com/RaymondFeckoury" target="_blank">GitHub |</a>
+                <a href="mailto:raymondfeckoury@icloud.com">Email</a>
+            </p>
+            </div>
         </div>
-      </div>
-
-        <!-- Navigation links -->
         <nav>
-          <a href="projects.html">Projects</a> |
-          <a href="interests.html">Hobbies & Interests</a> |
-          <a href="week2.html">Week 2 Tutorial</a>
+            <a href="#home-anchor">Home</a> |
+            <a href="#projects-anchor">Projects</a> |
+            <a href="#interests-anchor">Hobbies & Interests</a> |
+            <a href="#contact-anchor">Send Me Info!</a>
         </nav>
-
         <div class="intro">
-          <!-- More casual picture -->
-          <img class="casual-pic" src="./images/mainPic.png" alt="Picture of me">
-
-          <!-- Explains my background and what makes me me -->
-          <div class="intro-paragraphs">
-            <!-- Paragraph 1 -->
-            <p>
-              Hi there! I am a rising 3rd year undergraduate student studying 
-              Computer Science at The University of Georgia. I aspire to be
-              the most competent full stack engineer that I am capable of becoming,
-              and I hope to leverage these skills to build useful technologies throughout
-              the course of my career. 
-            </p>
-
-            <!-- Paragraph 2 -->
-            <p>
-              During my time at The University of Georgia I have served as an undergraduate
-              teaching assistant, participated and won awards in the university's 
-              annual hackathon, maintained a 4.0 major GPA, and was recently
-              selected to serve on the executive membership board for our chapter of 
-              the Association for Computing Machinery.
-            </p>
-          </div>
+            <img class="casual-pic" src="./images/mainPic.png" alt="Picture of me">
+            <div class="intro-paragraphs">
+                <p>
+                Hi there! I am a rising 3rd year undergraduate student studying 
+                Computer Science at The University of Georgia. I aspire to be
+                the most competent full stack engineer that I am capable of becoming,
+                and I hope to leverage these skills to build useful technologies throughout
+                the course of my career. 
+                </p>
+                <p>
+                During my time at The University of Georgia I have served as an undergraduate
+                teaching assistant, participated and won awards in the university's 
+                annual hackathon, maintained a 4.0 major GPA, and was recently
+                selected to serve on the executive membership board for our chapter of 
+                the Association for Computing Machinery.
+                </p>
+            </div>
         </div>
+        <hr>
+        <h1 id="projects-anchor">My Projects!</h1>
+        <div class="hackathon">
+            <h2>Free Food UGA</h2>
+            <div class="hackathon-links">
+            <a href="https://free-food-uga-97846.firebaseapp.com" target="_blank">Website Link | </a>
+            <a href="https://devpost.com/software/free-food-uga" target="_blank">Devpost Link</a>
+            </div>
+            <img class="hackathon1" src="./images/hackathon1.png" alt="Picture of the website">
+            <img class="hackathon2" src="./images/hackathon2.png" alt="Picture of the website">
+        </div>
+        <p class="indent">
+          I created this website along with my two teammates during a hackathon called UGAHacks 7, and
+          we won the Major League Hacking Best use of Google Cloud Award! The website helps students and
+          faculty find or advertise free food on campus instead of relying on group chats.
+        </p>
+        <p class="indent">
+          We used Firebase to host the website and database. We constructed database tables in Firebase, 
+          and connected to them using JavaScript. The front end of the website was developed using HTML, 
+          CSS, and JavaScript. We used the Google Maps API to display the map and add the markers, and 
+          we were able to implement a sign in page that enables the user to sign in with their google 
+          account using the Firebase documentation
+        </p>
+        <div class="app-organizer">
+            <h2 style="text-align: center;">Application Organizer</h2>
+            <a href="https://github.com/RaymondFeckoury/Group5_FinalProject" target="_blank">GitHub Repo</a>
+            <img class="appOrg1" src="./images/appOrg1.png" alt="Picture of the website"><br>
+            <img class="appOrg2" src="./images/appOrg2.png" alt="Picture of the website">
+            <img class="appOrg3" src="./images/appOrg3.png" alt="Picture of the website">
+        </div>
+        <p class="indent">
+            This website helps users organize information about their applications to jobs and/or internships.
+            It was a semester long team based project for a web programming course. I used PHP 
+            and SQL to build the backend, and HTML, CSS, and JavaScript on the front end. XAMPP was used 
+            to run servers on the localhost, and the website was not published. Learning how to use PHP and 
+            SQL to update and retrieve data from the database was the greatest challenge since the need to 
+            move applications to any category required a lot of queries. Implementing these queries successfully
+            and teaching myself these backend technologies was very rewarding!
+        </p>
+        <div class="interests">
+        <hr>
+        <h1 id="interests-anchor">More About Me</h1>
+        <div class="aboutMeButton">
+            <button id="button" onclick="showServerMessage();">
+            Click For Fun Facts!
+            </button><br>
+            <p id="message-container"></p>
+        </div>
+        <h2>Aviation</h2>
+        <div class="gallery">
+            <a target="_blank" href="./images/first-solo.png">
+            <img src="./images/first-solo.png" alt="Picture after my first solo flight" width="1000" height="auto">
+            </a>
+        </div>
+        <div class="gallery">
+            <a target="_blank" href="./images/first-solo2.png">
+            <img src="./images/first-solo2.png" alt="Picture after my first solo flight" width="500" height="auto">
+            </a>
+        </div>
+        <div class="gallery">
+            <a target="_blank" href="./images/shannon.png">
+            <img src="./images/shannon.png" alt="Picture after my first solo flight" width="500" height="auto">
+            </a>
+        </div>
+        <p class="indent">
+            When I was in high school I was very fortunate to have been given the opportunity to earn my
+            private pilots license. I did so successfully, and I have enjoyed taking friends and family flying!
+            I have not flown since starting college, but I hope to get back into it when I have time to in the future.
+            Above are pictures of me with my flight instructor, Shannon, as well as right after my first solo flight.
+        </p>
+        <div class="gallery">
+            <a target="_blank" href="./images/pic-from-hackathon.png">
+            <img src="./images/pic-from-hackathon.png" alt="Picture with friends at my first hackathon" width="500" height="auto">
+            </a>
+            <div class="desc">My friends and I at our first hackathon! I am looking forward to doing more.</div>
+        </div>
+        <div class="gallery" id="france">
+            <h2>Traveling</h2>
+            <a target="_blank" href="./images/france.png">
+            <img src="./images/france.png" alt="Picture with friends and family in France" width="500" height="auto">
+            </a>
+            <div class="desc">My mother is an immigrant from France, and we have taken many trips there to visit friends
+            and family. I love learning about their culture, and I hope to go back soon before my French becomes too rusty!</div>
+        </div> 
+        </div>
+        <hr>
+        <h1 id="contact-anchor">Send Info</h1>
+        <p id="info-paragraph">Please feel free to send me your email or any other information and 
+            I will be sure to contact you as soon as possible!
+        </p>
+        <form action="/form-handler" method="POST" class="contact-form">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email-input"><br><br>
+            <label for="comments">Other comments / info:</label><br><br>
+            <textarea id="comments" name="text-input"></textarea><br>
+            <br>
+            <input type="submit"><br><br>
+        </form>
     </div>
   </body>
 </html>

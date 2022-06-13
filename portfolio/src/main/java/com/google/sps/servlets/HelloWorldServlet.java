@@ -20,9 +20,9 @@ public class HelloWorldServlet extends HttpServlet {
     messages.add("I raced motocross for a few years, and won a championship in a series that travels to almost every race track in Georgia.");
     messages.add("I earned my private pilots license while I was in high school, and I hope to begin flying again once graduate from college.");
     messages.add("In my free time I enjoy spending time in the outdoors as well as hitting the gym with my friends!");
+    messages.add("Taking AP Computer Science during my last semester of high school is what sparked my interest in the field.");
     
     // Converts the list to json format
-    response.setContentType("text/html;");
     String json = convertToJsonUsingGson(messages);
 
     // Send the JSON as the response
